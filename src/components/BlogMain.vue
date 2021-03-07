@@ -2,7 +2,7 @@
   <div class="main">
     <div class="nav-box" :class="{ home: home }">
       <div class="logo" @click="HomeShow('/home')">
-        <router-link to="/home">小龙哥</router-link>
+        <router-link to="/home"></router-link>
       </div>
       <div class="nav-list">
         <router-link v-for="nav in navList" :key="nav.url" @click.native="HomeShow(nav.url)" to="nav.url">{{ nav.title }}</router-link>
